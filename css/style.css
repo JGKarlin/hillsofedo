@@ -2,8 +2,6 @@
    Palette derived from the app's own HillSeason.swift seasonal colors
    and the sumi-ink tone used in HowToPlayView.swift's ActionButton. */
 
-@import url('https://fonts.googleapis.com/css2?family=Caudex:wght@400;700&family=Yuji+Syuku&display=swap');
-
 :root {
   --ink: #2b241c;
   --washi: #f4ecdd;
@@ -296,6 +294,75 @@ section {
   border-bottom: 1px solid var(--washi-dark);
 }
 section:last-of-type { border-bottom: none; }
+
+.hero-layout {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+.hero-text {
+  flex: 1 1 380px;
+  min-width: 0;
+}
+.hero-visual {
+  flex: 0 1 260px;
+}
+.hero-visual img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 12px 32px rgba(43,36,28,0.3);
+}
+.cta-row {
+  margin-top: 20px;
+}
+.app-store-cta {
+  display: inline-block;
+  background: var(--ink);
+  color: var(--washi);
+  font-weight: bold;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+}
+.app-store-cta:hover {
+  background: var(--vermillion);
+}
+
+#coop-highlight {
+  background: var(--washi-dark);
+}
+.coop-highlight-inner {
+  text-align: center;
+}
+.coop-highlight-inner h2 {
+  display: inline-block;
+  border-left: none;
+  padding-left: 0;
+}
+.coop-highlight-inner p {
+  margin: 0 auto 12px;
+}
+
+.jump-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 28px;
+}
+.jump-nav a {
+  font-size: 0.85rem;
+  color: var(--ink);
+  text-decoration: none;
+  background: var(--washi-dark);
+  border-radius: 999px;
+  padding: 5px 14px;
+}
+.jump-nav a:hover {
+  background: var(--vermillion);
+  color: var(--washi);
+}
 
 h1, h2, h3 {
   font-family: var(--font-heading-en);
