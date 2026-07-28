@@ -345,6 +345,10 @@ section:last-of-type { border-bottom: none; }
   right: max(20px, calc(50% - 460px));
   overflow: hidden;
   z-index: 0;
+  /* The only effect on this element: one soft fade-in on the left.
+     Do not stack a second mask or an overlay gradient on top of it. */
+  mask-image: linear-gradient(to right, transparent 0%, black 22%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 22%);
 }
 .hero-bg img {
   width: 102%;
