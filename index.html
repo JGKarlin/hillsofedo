@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Hills of Edo — 江戸の坂</title>
+  <meta name="description" content="Explore Tokyo's 79 historic Edo-period hills on foot, solo or in AR cooperative challenges. A walking game for iOS.">
+  <link rel="icon" href="assets/icon/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="seasonal-bar"></div>
+  <header class="site-header">
+    <a class="site-title" href="#hero">
+      <span data-lang="en">The Hills of Edo</span>
+      <span data-lang="ja">江戸の坂</span>
+    </a>
+    <button id="lang-toggle" type="button">日本語</button>
+  </header>
+
+  <main>
+    <section id="hero" class="container">
+      <img src="assets/icon/app-icon.png" alt="The Hills of Edo app icon" width="140" height="140" style="border-radius: 24px; box-shadow: 0 6px 20px rgba(43,36,28,0.3);">
+      <h1>
+        <span data-lang="en">The Hills of Edo</span>
+        <span data-lang="ja">江戸の坂</span>
+      </h1>
+      <p style="font-size: 1.2rem;">
+        <span data-lang="en">Explore Tokyo on Foot</span>
+        <span data-lang="ja">港区で楽しむ現地体験</span>
+      </p>
+      <p>
+        <span data-lang="en">Explore Tokyo's Minato Ward to find 79 historic Edo-period hills. Use the in-game map to locate and capture markers at each hill's top and bottom, unlocking historical details about the city's transformation. Progress through ten samurai ranks or team up in cooperative mode for shared challenges and mini-games.</span>
+        <span data-lang="ja">東京・港区を歩いて、江戸の面影を残す79の坂を巡ろう。アプリ内の地図を使って各坂に辿り着き、上下の標識を確保するたびに、江戸から現代へと移り変わる東京の歴史が明らかになる。全ての坂を制覇して10の武士の位階を登りつめるもよし、協力モードでパートナーと共にユニークなチャレンジやミニゲームに挑むもよし。</span>
+      </p>
+      <p>
+        <a href="https://apps.apple.com/jp/app/the-hills-of-edo/id6745310935" style="font-weight: bold;">
+          <span data-lang="en">Download on the App Store →</span>
+          <span data-lang="ja">App Storeでダウンロード →</span>
+        </a>
+      </p>
+    </section>
+    <section id="screenshots" class="container">
+      <h2>
+        <span data-lang="en">Screenshots</span>
+        <span data-lang="ja">スクリーンショット</span>
+      </h2>
+      <div data-lang="en" class="shot-row">
+        <img src="assets/screenshots/en/en-01.jpg" alt="Hills of Edo screenshot 1" width="442" height="960" loading="lazy" decoding="async" style="height: 480px; border-radius: 12px; box-shadow: 0 4px 12px rgba(43,36,28,0.25);">
+        <img src="assets/screenshots/en/en-02.jpg" alt="Hills of Edo screenshot 2" width="442" height="960" loading="lazy" decoding="async" style="height: 480px; border-radius: 12px; box-shadow: 0 4px 12px rgba(43,36,28,0.25);">
+        <img src="assets/screenshots/en/en-03.jpg" alt="Hills of Edo screenshot 3" width="442" height="960" loading="lazy" decoding="async" style="height: 480px; border-radius: 12px; box-shadow: 0 4px 12px rgba(43,36,28,0.25);">
+        <img src="assets/screenshots/en/en-04.jpg" alt="Hills of Edo screenshot 4" width="442" height="960" loading="lazy" decoding="async" style="height: 480px; border-radius: 12px; box-shadow: 0 4px 12px rgba(43,36,28,0.25);">
+        <img src="assets/screenshots/en/en-05.jpg" alt="Hills of Edo screenshot 5" width="442" height="960" loading="lazy" decoding="async" style="height: 480px; border-radius: 12px; box-shadow: 0 4px 12px rgba(43,36,28,0.25);">
+        <img src="assets/screenshots/en/en-06.jpg" alt="Hills of Edo screenshot 6" width="442" height="960" loading="lazy" decoding="async" style="height: 480px; border-radius: 12px; box-shadow: 0 4px 12px rgba(43,36,28,0.25);">
+        <img src="assets/screenshots/en/en-07.jpg" alt="Hills of Edo screenshot 7" width="442" height="960" loading="lazy" decoding="async" style="height: 480px; border-radius: 12px; box-shadow: 0 4px 12px rgba(43,36,28,0.25);">
+        <img src="assets/screenshots/en/en-08.jpg" alt="Hills of Edo screenshot 8" width="442" height="960" loading="lazy" decoding="async" style="height: 480px; border-radius: 12px; box-shadow: 0 4px 12px rgba(43,36,28,0.25);">
+        <img src="assets/screenshots/en/en-09.jpg" alt="Hills of Edo screenshot 9" width="442" height="960" loading="lazy" decoding="async" style="height: 480px; border-radius: 12px; box-shadow: 0 4px 12px rgba(43,36,28,0.25);">
+        <img src="assets/screenshots/en/en-10.jpg" alt="Hills of Edo screenshot 10" width="442" height="960" loading="lazy" decoding="async" style="height: 480px; border-radius: 12px; box-shadow: 0 4px 12px rgba(43,36,28,0.25);">
+      </div>
+      <div data-lang="ja" class="shot-row">
+        <img src="assets/screenshots/ja/ja-01.jpg" alt="江戸の坂 スクリーンショット 1" width="442" height="960" loading="lazy" decoding="async" style="height: 480px; border-radius: 12px; box-shadow: 0 4px 12px rgba(43,36,28,0.25);">
+        <img src="assets/screenshots/ja/ja-02.jpg" alt="江戸の坂 スクリーンショット 2" width="442" height="960" loading="lazy" decoding="async" style="height: 480px; border-radius: 12px; box-shadow: 0 4px 12px rgba(43,36,28,0.25);">
+        <img src="assets/screenshots/ja/ja-03.jpg" alt="江戸の坂 スクリーンショット 3" width="442" height="960" loading="lazy" decoding="async" style="height: 480px; border-radius: 12px; box-shadow: 0 4px 12px rgba(43,36,28,0.25);">
+        <img src="assets/screenshots/ja/ja-04.jpg" alt="江戸の坂 スクリーンショット 4" width="442" height="960" loading="lazy" decoding="async" style="height: 480px; border-radius: 12px; box-shadow: 0 4px 12px rgba(43,36,28,0.25);">
+        <img src="assets/screenshots/ja/ja-05.jpg" alt="江戸の坂 スクリーンショット 5" width="442" height="960" loading="lazy" decoding="async" style="height: 480px; border-radius: 12px; box-shadow: 0 4px 12px rgba(43,36,28,0.25);">
+        <img src="assets/screenshots/ja/ja-06.jpg" alt="江戸の坂 スクリーンショット 6" width="442" height="960" loading="lazy" decoding="async" style="height: 480px; border-radius: 12px; box-shadow: 0 4px 12px rgba(43,36,28,0.25);">
+        <img src="assets/screenshots/ja/ja-07.jpg" alt="江戸の坂 スクリーンショット 7" width="442" height="960" loading="lazy" decoding="async" style="height: 480px; border-radius: 12px; box-shadow: 0 4px 12px rgba(43,36,28,0.25);">
+        <img src="assets/screenshots/ja/ja-08.jpg" alt="江戸の坂 スクリーンショット 8" width="442" height="960" loading="lazy" decoding="async" style="height: 480px; border-radius: 12px; box-shadow: 0 4px 12px rgba(43,36,28,0.25);">
+        <img src="assets/screenshots/ja/ja-09.jpg" alt="江戸の坂 スクリーンショット 9" width="442" height="960" loading="lazy" decoding="async" style="height: 480px; border-radius: 12px; box-shadow: 0 4px 12px rgba(43,36,28,0.25);">
+        <img src="assets/screenshots/ja/ja-10.jpg" alt="江戸の坂 スクリーンショット 10" width="442" height="960" loading="lazy" decoding="async" style="height: 480px; border-radius: 12px; box-shadow: 0 4px 12px rgba(43,36,28,0.25);">
+        <img src="assets/screenshots/ja/ja-11.jpg" alt="江戸の坂 スクリーンショット 11" width="442" height="960" loading="lazy" decoding="async" style="height: 480px; border-radius: 12px; box-shadow: 0 4px 12px rgba(43,36,28,0.25);">
+        <img src="assets/screenshots/ja/ja-12.jpg" alt="江戸の坂 スクリーンショット 12" width="442" height="960" loading="lazy" decoding="async" style="height: 480px; border-radius: 12px; box-shadow: 0 4px 12px rgba(43,36,28,0.25);">
+      </div>
+    </section>
+    <section id="features" class="container">
+      <h2>
+        <span data-lang="en">Features</span>
+        <span data-lang="ja">特徴</span>
+      </h2>
+      <ul>
+        <li>
+          <strong><span data-lang="en">79 Historic Hills</span><span data-lang="ja">79の歴史ある坂</span></strong>
+          — <span data-lang="en">Discover every hill of Edo-period Tokyo, each with its own history, haiku, and name origin.</span><span data-lang="ja">江戸時代の東京に残る坂を一つ一つ巡り、それぞれの歴史や由来、俳句を発見しましょう。</span>
+        </li>
+        <li>
+          <strong><span data-lang="en">GPS Navigation & Capture</span><span data-lang="ja">GPSナビゲーションで確保</span></strong>
+          — <span data-lang="en">Use the in-game map to navigate to each hill, then capture its top and bottom markers once you're in range.</span><span data-lang="ja">アプリ内の地図で坂へ向かい、標識の近くで上下の標識を確保します。</span>
+        </li>
+        <li>
+          <strong><span data-lang="en">Ten Samurai Ranks</span><span data-lang="ja">10の武士の位階</span></strong>
+          — <span data-lang="en">Rise from Ronin to Shogun as you capture more hills.</span><span data-lang="ja">坂を確保するごとに、浪人から将軍へと位階を登りつめます。</span>
+        </li>
+        <li>
+          <strong><span data-lang="en">Cooperative Mode</span><span data-lang="ja">協力モード</span></strong>
+          — <span data-lang="en">Team up with a partner as lord and retainer to tackle unique challenges — including AR encounters, voice puzzles, and proximity-based mini-games — at specially designed hills.</span><span data-lang="ja">パートナーと主君・家臣として協力し、AR、音声認識、位置連携などを使ったユニークなチャレンジやミニゲームに、特別に設計された坂で挑みます。</span>
+        </li>
+        <li>
+          <strong><span data-lang="en">Game Center Integration</span><span data-lang="ja">ゲームセンター連携</span></strong>
+          — <span data-lang="en">Compete on leaderboards, unlock achievements, and compare progress with friends.</span><span data-lang="ja">リーダーボードで競い合い、実績を解除し、友達と進行状況を比較できます。</span>
+        </li>
+        <li>
+          <strong><span data-lang="en">Bilingual</span><span data-lang="ja">日本語・英語対応</span></strong>
+          — <span data-lang="en">Fully playable in English and Japanese.</span><span data-lang="ja">日本語と英語、両方で完全にプレイ可能です。</span>
+        </li>
+      </ul>
+    </section>
+    <section id="how-to-play" class="container">
+    <h2>
+      <span data-lang="en">How to Play: Singleplayer</span>
+      <span data-lang="ja">一人用の遊び方</span>
+    </h2>
+
+    <h3><span data-lang="en">Hill Map</span><span data-lang="ja">地図</span></h3>
+    <p><span data-lang="en">Exploring the map through various views:</span><span data-lang="ja">地図の表示方法:</span></p>
+    <ul>
+      <li><span data-lang="en">All — Shows all 79 hills and their current capture state.</span><span data-lang="ja">すべて — 79本すべての坂とその確保状況を表示します。</span></li>
+      <li><span data-lang="en">Nearest — Shows only the nearest marker to your current position.</span><span data-lang="ja">最寄り — 現在位置に最も近い坂のみを表示します。</span></li>
+      <li><span data-lang="en">Uncaptured — Shows only the remaining uncaptured hills.</span><span data-lang="ja">未確保 — 未確保の坂のみを表示します。</span></li>
+    </ul>
+    <p><span data-lang="en">Hill markers:</span><span data-lang="ja">坂の標識:</span></p>
+    <div class="icon-row">
+      <figure>
+        <img src="assets/howto/marker_uncollected.png" alt="Uncaptured marker" width="60" height="60">
+        <figcaption><span data-lang="en">Uncaptured</span><span data-lang="ja">未確保</span></figcaption>
+      </figure>
+      <figure>
+        <img src="assets/howto/marker_collected.png" alt="Captured marker" width="60" height="60">
+        <figcaption><span data-lang="en">Captured</span><span data-lang="ja">坂確保済み</span></figcaption>
+      </figure>
+      <figure>
+        <img src="assets/howto/marker_lost.png" alt="Lost marker" width="60" height="60">
+        <figcaption><span data-lang="en">Lost</span><span data-lang="ja">確保失敗</span></figcaption>
+      </figure>
+    </div>
+    <p>
+      <strong><span data-lang="en">Proximity Alert:</span><span data-lang="ja">近接アラート:</span></strong>
+      <span data-lang="en">A banner pops up automatically when you approach the nearest uncaptured hill, displaying the hill's name and live distance. The distance for the proximity banner can be adjusted in the Settings.</span>
+      <span data-lang="ja">未確保の坂に近づくと、坂の名前と現在地からの距離を示すバナーが表示されます。このアラート距離は設定で調整可能です。</span>
+    </p>
+    <p>
+      <strong><span data-lang="en">Map Hill Marker:</span><span data-lang="ja">地図のマーカー:</span></strong>
+      <span data-lang="en">The map does not show the precise location of the top and bottom markers but indicates the physical geographic center of the hill, midway between its top and bottom. If the map marker appears in the middle of a road, please note the actual capture point is not located in the street itself.</span>
+      <span data-lang="ja">地図上のマーカーが道路の真ん中に表示されている場合、実際の確保位置は道路自体にはないことに注意してください。地図は坂の頂上と麓の標識の正確な位置を示していませんが、坂の頂上と麓の間の中点にある実際の地理的中心を示しています。</span>
+    </p>
+
+    <h3><span data-lang="en">Capturing</span><span data-lang="ja">確保</span></h3>
+    <p>
+      <strong><span data-lang="en">Capturing Screen:</span><span data-lang="ja">確保画面:</span></strong>
+      <span data-lang="en">The capturing screen will activate automatically when you are within range of a marker.</span>
+      <span data-lang="ja">標識の近くまで来ると、確保画面が自動的に表示されます。</span>
+    </p>
+    <p>
+      <strong><span data-lang="en">Capture Process:</span><span data-lang="ja">確保の流れ:</span></strong>
+      <span data-lang="en">The button to begin capture becomes active once the marker is within sight. If the battle to capture goes badly, you have three chances to "Rally" your forces or try again. You may "Surrender" at any time, but surrendering results in the hill being lost in battle. Three failed rallies will result in the battle being lost.</span>
+      <span data-lang="ja">標識が視界に入ると、確保ボタンが押せるようになります。もし確保の戦況が悪化した場合、あなたは3回まで部隊を「立て直し」て再試行できます。「降伏」すればいつでも確保を諦められますが、降伏するとその坂は一時的に確保不能になります。3回立て直しに失敗すると、その坂での戦いは敗北となります。</span>
+    </p>
+    <div class="icon-row">
+      <figure>
+        <img src="assets/howto/rallying.png" alt="Rally button" width="60" height="60">
+        <figcaption><span data-lang="en">Rally</span><span data-lang="ja">立て直し</span></figcaption>
+      </figure>
+      <figure>
+        <img src="assets/howto/surrendering.png" alt="Surrender button" width="60" height="60">
+        <figcaption><span data-lang="en">Surrender</span><span data-lang="ja">降伏</span></figcaption>
+      </figure>
+    </div>
+
+    <h3><span data-lang="en">Rank Banner</span><span data-lang="ja">位階の旗</span></h3>
+    <p>
+      <span data-lang="en">The flag banner on the main menu opens a screen with detailed progress and tracking of both captured and uncaptured hills. Tapping a captured hill shows its detailed card — distance, elevation, historical background, and the marker's inscription. Tapping an uncaptured hill shows that hill on the map.</span>
+      <span data-lang="ja">メインメニューののぼり旗は、確保済みおよび未確保の坂の詳細な進行状況と記録を表示するボタンです。確保済みの坂をタップすると、距離、標高、歴史的背景、標識の碑文などの情報が記載された詳細カードが表示されます。未確保の坂をタップすると、その坂が地図に表示されます。</span>
+    </p>
+    <div class="icon-row icon-row-scroll">
+      <figure>
+        <img src="assets/howto/ronin.png" alt="Rōnin rank" width="70" height="70">
+        <figcaption><span data-lang="en">Rōnin</span><span data-lang="ja">浪人</span></figcaption>
+      </figure>
+      <figure>
+        <img src="assets/howto/ashigaru.png" alt="Ashigaru rank" width="70" height="70">
+        <figcaption><span data-lang="en">Ashigaru</span><span data-lang="ja">足軽</span></figcaption>
+      </figure>
+      <figure>
+        <img src="assets/howto/jisamurai.png" alt="Ji-Samurai rank" width="70" height="70">
+        <figcaption><span data-lang="en">Ji-Samurai</span><span data-lang="ja">地侍</span></figcaption>
+      </figure>
+      <figure>
+        <img src="assets/howto/okachi.png" alt="Okachi rank" width="70" height="70">
+        <figcaption><span data-lang="en">Okachi</span><span data-lang="ja">徒士</span></figcaption>
+      </figure>
+      <figure>
+        <img src="assets/howto/yoriki.png" alt="Yoriki rank" width="70" height="70">
+        <figcaption><span data-lang="en">Yoriki</span><span data-lang="ja">与力</span></figcaption>
+      </figure>
+      <figure>
+        <img src="assets/howto/samuraitaisho.png" alt="Samurai Taishō rank" width="70" height="70">
+        <figcaption><span data-lang="en">Samurai Taishō</span><span data-lang="ja">侍大将</span></figcaption>
+      </figure>
+      <figure>
+        <img src="assets/howto/gokenin.png" alt="Gokenin rank" width="70" height="70">
+        <figcaption><span data-lang="en">Gokenin</span><span data-lang="ja">御家人</span></figcaption>
+      </figure>
+      <figure>
+        <img src="assets/howto/hatamoto.png" alt="Hatamoto rank" width="70" height="70">
+        <figcaption><span data-lang="en">Hatamoto</span><span data-lang="ja">旗本</span></figcaption>
+      </figure>
+      <figure>
+        <img src="assets/howto/daimyo.png" alt="Daimyō rank" width="70" height="70">
+        <figcaption><span data-lang="en">Daimyō</span><span data-lang="ja">大名</span></figcaption>
+      </figure>
+      <figure>
+        <img src="assets/howto/shogun.png" alt="Shōgun rank" width="70" height="70">
+        <figcaption><span data-lang="en">Shōgun</span><span data-lang="ja">将軍</span></figcaption>
+      </figure>
+    </div>
+    <p>
+      <strong><span data-lang="en">Maps:</span><span data-lang="ja">地図:</span></strong>
+      <span data-lang="en">Each hill card can display either a contemporary modern map or a historical map based on the *Edo Kiriezu* — detailed woodblock-printed sectional maps of Edo created between 1849 and 1862.</span>
+      <span data-lang="ja">各坂カードでは、現代の地図または古地図のいずれかを表示できます。古地図は「江戸切絵図」に基づいており、これは1849年から1862年にかけて作成された、江戸の詳細な木版刷りの分割地図です。</span>
+    </p>
+
+    <h3><span data-lang="en">Social Features</span><span data-lang="ja">ソーシャル機能</span></h3>
+    <ul>
+      <li><span data-lang="en">Game Center — Sign in to compare progress with friends, track achievements, and compete on leaderboards.</span><span data-lang="ja">ゲームセンター — サインインすることで、友達との進行状況の比較、実績の追跡、リーダーボードでの競争が可能になります。</span></li>
+      <li><span data-lang="en">Friends — Connect with Game Center friends to compare hill capture progress and ranks.</span><span data-lang="ja">友達機能 — ゲームセンターの友達とつながり、お互いの坂の確保進行状況や位階を比較できます。</span></li>
+      <li><span data-lang="en">Achievements — Unlock achievements by capturing hills and rise through the ranks.</span><span data-lang="ja">実績システム — 坂を確保したり特定の目標を達成したりすることで実績を解除できます。</span></li>
+      <li><span data-lang="en">Leaderboards — Compete worldwide based on the number of hills captured.</span><span data-lang="ja">リーダーボード — ゲームセンターのリーダーボードで友達や世界中のプレイヤーと確保した坂の数を競い合えます。</span></li>
+    </ul>
+
+    <h3><span data-lang="en">Free Tier & Purchases</span><span data-lang="ja">無料版と購入</span></h3>
+    <ul>
+      <li><span data-lang="en">Free to Start — Capture your first 10 hills for free. A one-time purchase unlocks all 79.</span><span data-lang="ja">無料でスタート — 最初の10坂は無料で確保できます。その後、一度の購入で全79坂がアンロックされます。</span></li>
+      <li><span data-lang="en">Unlock Options — Purchase singleplayer, cooperative, or both modes together at a discounted price.</span><span data-lang="ja">アンロックオプション — 一人用アクセス、協力アクセス、または割引価格で両モードをまとめてアンロックできます。</span></li>
+      <li><span data-lang="en">Upgrade — Already own one mode? Add the other at a reduced upgrade price.</span><span data-lang="ja">アップグレード — すでに一つのモードをお持ちですか？もう一つを割引アップグレード価格で追加できます。</span></li>
+      <li><span data-lang="en">Restore Purchases — Reinstalled the app or switched devices? Restore your purchases from Settings.</span><span data-lang="ja">購入を復元 — アプリを再インストールしたりデバイスを変更しましたか？設定から購入を復元できます。</span></li>
+    </ul>
+
+    <h3><span data-lang="en">Tips</span><span data-lang="ja">ヒント</span></h3>
+    <ul>
+      <li><span data-lang="en">Most hills require capturing both the top and bottom markers, but a few hills have only one marker.</span><span data-lang="ja">多くの坂は頂上と麓の両方の標識を確保する必要がありますが、一部の坂には標識が一つしかありません。</span></li>
+      <li><span data-lang="en">Lost hills may be captured by returning the next day or capturing the next nearest hill.</span><span data-lang="ja">一度確保に失敗したか降伏した坂は、翌日になるか、他の未確保の坂を確保することで再挑戦できるようになります。</span></li>
+      <li><span data-lang="en">The compass on the capture screen points to the marker with live distance updates.</span><span data-lang="ja">確保画面のコンパスは標識の方向と距離（リアルタイム更新）を示しています。</span></li>
+    </ul>
+  </section>
+  <section id="how-to-play-coop" class="container">
+    <h2>
+      <span data-lang="en">How to Play: Cooperative</span>
+      <span data-lang="ja">協力の遊び方</span>
+    </h2>
+    <p><em><span data-lang="en">More cooperative hill challenges will be added in future updates.</span><span data-lang="ja">今後のアップデートで、協力チャレンジの坂が追加されます。</span></em></p>
+
+    <h3><span data-lang="en">Before You Start</span><span data-lang="ja">始める前に</span></h3>
+    <ul>
+      <li><strong><span data-lang="en">System Requirements:</span><span data-lang="ja">必要な端末:</span></strong> <span data-lang="en">iPhone 11 or later (excluding iPhone SE and iPhone 16e).</span><span data-lang="ja">iPhone 11以降（iPhone SEとiPhone 16eを除く）。</span></li>
+      <li><strong><span data-lang="en">Two Players:</span><span data-lang="ja">二人で協力:</span></strong> <span data-lang="en">Cooperative mode is designed for two players who are physically together.</span><span data-lang="ja">協力モードは、同じ場所にいる二人でプレイすることを前提としています。</span></li>
+      <li><strong><span data-lang="en">Game Center:</span><span data-lang="ja">ゲームセンター:</span></strong> <span data-lang="en">Sign in to Game Center on both devices before starting a cooperative session.</span><span data-lang="ja">協力セッションを始める前に、両方の端末でゲームセンターにサインインしてください。</span></li>
+      <li><strong><span data-lang="en">Cooperative Permissions:</span><span data-lang="ja">協力モードの初回許可:</span></strong> <span data-lang="en">Cooperative play requires "Always" location access, enabling the richer, sensor-based gameplay used by cooperative challenges.</span><span data-lang="ja">協力プレイには位置情報の「常に許可」が必要です。これらの許可により、センサーを活用したより豊かな協力チャレンジが楽しめます。</span></li>
+    </ul>
+
+    <h3><span data-lang="en">Matchmaking</span><span data-lang="ja">マッチメイク</span></h3>
+    <ul>
+      <li><strong><span data-lang="en">Form a Squad:</span><span data-lang="ja">隊を編成する:</span></strong> <span data-lang="en">On the Cooperative map, tap the round crest button to start matchmaking and connect to the other player nearby.</span><span data-lang="ja">協力マップ上で丸い家紋ボタンをタップすると、マッチメイキングが始まり、近くにいるプレイヤーと接続できます。</span></li>
+      <li><strong><span data-lang="en">Choose Your Crest:</span><span data-lang="ja">家紋を選ぶ:</span></strong> <span data-lang="en">After matchmaking, players select a crest — the Lord selects first, then the Retainer confirms.</span><span data-lang="ja">マッチング完了後、家紋を選びます。主君が先に選択し、その後家臣が確認・決定します。</span></li>
+      <li><strong><span data-lang="en">Roles:</span><span data-lang="ja">役割:</span></strong> <span data-lang="en">Cooperative challenges use two roles: Lord and Retainer. Each device shows role-specific instructions.</span><span data-lang="ja">協力チャレンジには二つの役割があります：主君と家臣。端末ごとに役割に応じた指示が表示されます。</span></li>
+      <li><strong><span data-lang="en">How the Lord Is Chosen:</span><span data-lang="ja">主君の決まり方:</span></strong> <span data-lang="en">Roles are assigned based on singleplayer progress — the player with more hills captured becomes the Lord.</span><span data-lang="ja">役割は一人用モードの進行状況に基づいて決まります。より多くの坂を確保しているプレイヤーが主君となります。</span></li>
+    </ul>
+    <div class="icon-row">
+      <figure>
+        <img src="assets/howto/lord.svg" alt="Lord role icon" width="60" height="60">
+        <figcaption><span data-lang="en">Lord</span><span data-lang="ja">主君</span></figcaption>
+      </figure>
+      <figure>
+        <img src="assets/howto/retainer.svg" alt="Retainer role icon" width="60" height="60">
+        <figcaption><span data-lang="en">Retainer</span><span data-lang="ja">家臣</span></figcaption>
+      </figure>
+    </div>
+
+    <h3><span data-lang="en">Cooperative HUD</span><span data-lang="ja">協力HUD</span></h3>
+    <ul>
+      <li><span data-lang="en">A heads-up display appears at the top of your screen during challenges, showing the current hill's name and each player's Game Center name, icon, and role.</span><span data-lang="ja">協力チャレンジ中は、画面上部にHUDが表示され、現在挑戦中の坂の名前と、二人のGame Center名・アイコン・役割が確認できます。</span></li>
+      <li><strong><span data-lang="en">GPS distance:</span><span data-lang="ja">GPS距離:</span></strong> <span data-lang="en">Shows your distance to the current objective, often the hill's top marker.</span><span data-lang="ja">現在の目標までの距離を表示します。多くの場合、坂の頂上の標識までの距離です。</span></li>
+      <li><strong><span data-lang="en">Player distance:</span><span data-lang="ja">プレイヤー間距離:</span></strong> <span data-lang="en">Shows the distance between the two players.</span><span data-lang="ja">二人の間の距離を表示します。</span></li>
+      <li><strong><span data-lang="en">Player status:</span><span data-lang="ja">プレイヤーステータス:</span></strong> <span data-lang="en">A short state message reflects each player's current status or action.</span><span data-lang="ja">各プレイヤーの現在の状態や行動を反映する短い状態メッセージを表示します。</span></li>
+      <li><strong><span data-lang="en">Status color:</span><span data-lang="ja">ステータス色:</span></strong> <span data-lang="en">Green generally means correct positioning; orange or red means adjustment is needed.</span><span data-lang="ja">一般に緑は条件を満たしていることを示し、オレンジや赤は位置調整が必要なことを示します。</span></li>
+    </ul>
+
+    <h3><span data-lang="en">Connection Indicator</span><span data-lang="ja">接続表示</span></h3>
+    <p><span data-lang="en">The icon in the top-right shows the stability of the network connection between players. Green = stable, red = communication problems, purple = reconnecting, gray = disconnected. If you see a warning color, stay close together and wait briefly — many issues resolve automatically.</span><span data-lang="ja">右上のアイコンは、二人のプレイヤー間のネットワーク接続の安定性を示します。緑は安定した接続、赤は通信の問題、紫は再接続中、グレーは切断を意味します。アイコンが警告色になったときは、できるだけ近づいて少し待ちましょう。多くの問題は自動的に解消されます。</span></p>
+
+    <h3><span data-lang="en">Cooperative Gameplay</span><span data-lang="ja">協力プレイ</span></h3>
+    <ul>
+      <li><strong><span data-lang="en">Starting challenges:</span><span data-lang="ja">チャレンジの開始:</span></strong> <span data-lang="en">Triggered when both players are at the hill top marker location.</span><span data-lang="ja">協力チャレンジは、二人が坂の頂上にある標識の場所に揃うと始まります。</span></li>
+      <li><strong><span data-lang="en">Retry a failed challenge:</span><span data-lang="ja">失敗したチャレンジを再挑戦:</span></strong> <span data-lang="en">Travel together to the hill's bottom marker to clear the lost state and try again.</span><span data-lang="ja">仲間と一緒に坂の麓にある標識まで移動すれば、失敗状態をリセットして再挑戦できます。</span></li>
+      <li><strong><span data-lang="en">Leaving a challenge:</span><span data-lang="ja">チャレンジから退出:</span></strong> <span data-lang="en">Simply move away from the hill — both players return to the Map view.</span><span data-lang="ja">坂から離れれば退出できます。退出すると、二人とも地図画面に戻ります。</span></li>
+      <li><strong><span data-lang="en">Shared outcome:</span><span data-lang="ja">結果は共有:</span></strong> <span data-lang="en">Success and failure are shared — your team wins and loses together.</span><span data-lang="ja">成功も失敗も二人で分かち合います。</span></li>
+    </ul>
+
+    <h3><span data-lang="en">Free Tier & Purchases</span><span data-lang="ja">無料版と購入</span></h3>
+    <ul>
+      <li><span data-lang="en">Complete your first 5 cooperative challenges for free. A one-time purchase unlocks all current and future cooperative missions.</span><span data-lang="ja">最初の5つの協力チャレンジは無料で完了できます。その後、一度の購入で現在および将来のすべての協力ミッションがアンロックされます。</span></li>
+      <li><span data-lang="en">Purchase cooperative access, singleplayer access, or unlock both modes together at a discounted price.</span><span data-lang="ja">協力アクセス、一人用アクセス、または割引価格で両モードをまとめてアンロックできます。</span></li>
+    </ul>
+
+    <h3><span data-lang="en">Tips</span><span data-lang="ja">ヒント</span></h3>
+    <ul>
+      <li><span data-lang="en">Talk to each other and confirm readiness before starting key moments in a challenge.</span><span data-lang="ja">チャレンジ中の重要な場面では、互いに準備ができているか確認してから進めましょう。</span></li>
+      <li><span data-lang="en">Agree on a plan before starting each challenge.</span><span data-lang="ja">チャレンジを始める前に、二人で作戦を決めておきましょう。</span></li>
+      <li><span data-lang="en">Keep your battery charged — cooperative play can use more power.</span><span data-lang="ja">協力プレイはバッテリー消費が多くなりがちです。十分に充電しておきましょう。</span></li>
+      <li><span data-lang="en">Play safely! Stop and look around before interacting with your device.</span><span data-lang="ja">安全にプレイしましょう！端末を操作する前に、立ち止まって周囲を確認してください。</span></li>
+    </ul>
+  </section>
+    <section id="coop-hills" class="container">
+    <h2>
+      <span data-lang="en">Cooperative Hill Challenges</span>
+      <span data-lang="ja">協力チャレンジの坂</span>
+    </h2>
+    <p>
+      <span data-lang="en">Twelve hills feature unique two-player challenges — several built around AR. Here's a taste of each — no spoilers.</span>
+      <span data-lang="ja">12の坂に、二人用のユニークなチャレンジが用意されています（いくつかはARを使用）。ネタバレなしで、それぞれをご紹介します。</span>
+    </p>
+
+    <ul>
+      <li class="hill-card">
+        <img src="assets/coop-icons/hill-2.png" alt="Anzenji-zaka achievement icon" class="hill-icon" width="72" height="72">
+        <div>
+          <strong><span data-lang="en">Anzenji-zaka (安全寺坂)</span><span data-lang="ja">安全寺坂</span></strong><br>
+          <span data-lang="en">A vanished temple once rang its bell across this slope. Descend together to bring Anzenji back to life — but restoring a lost sound takes more than one pair of hands.</span>
+          <span data-lang="ja">この坂にはかつて江戸中に響いた寺の鐘があった。失われた安全寺を二人で蘇らせよう——消えた音を取り戻すには、一人の力だけでは足りない。</span>
+        </div>
+      </li>
+      <li class="hill-card">
+        <img src="assets/coop-icons/hill-10.png" alt="Gyoran-zaka achievement icon" class="hill-icon" width="72" height="72">
+        <div>
+          <strong><span data-lang="en">Gyoran-zaka (魚籃坂)</span><span data-lang="ja">魚籃坂</span></strong><br>
+          <span data-lang="en">A sacred koi rises from otherworldly waters at Gyoran-zaka. Carry it safely down the slope in ceremonial procession — one wrong move, and the offering slips away.</span>
+          <span data-lang="ja">魚籃坂では、常世の水底から神聖な鯉が現れる。荘厳な行列で坂を下り、その供物を無事に届けよう——気を抜けば、鯉は逃げてしまう。</span>
+        </div>
+      </li>
+      <li class="hill-card">
+        <img src="assets/coop-icons/hill-11.png" alt="Hebi-zaka achievement icon" class="hill-icon" width="72" height="72">
+        <div>
+          <strong><span data-lang="en">Hebi-zaka (蛇坂)</span><span data-lang="ja">蛇坂</span></strong><br>
+          <span data-lang="en">Something far larger than a snake now coils across Hebi-zaka. Getting past its watchful gaze will take more than luck — and more than one player.</span>
+          <span data-lang="ja">蛇坂には、蛇よりもずっと大きな何かが今も巻きついている。その鋭い視線をかいくぐるには、運だけでは足りない——そして、一人だけでも足りない。</span>
+        </div>
+      </li>
+      <li class="hill-card">
+        <img src="assets/coop-icons/hill-12.png" alt="Hijiri-zaka achievement icon" class="hill-icon" width="72" height="72">
+        <div>
+          <strong><span data-lang="en">Hijiri-zaka (聖坂)</span><span data-lang="ja">聖坂</span></strong><br>
+          <span data-lang="en">Among the pilgrims gathered on Hijiri-zaka, not everyone is who they claim to be. Work together to see through the disguise before time runs out.</span>
+          <span data-lang="ja">聖坂に集まった巡礼者たちの中に、素性を偽る者が紛れている。刻限が来る前に、二人で真贋を見極めよう。</span>
+        </div>
+      </li>
+      <li class="hill-card">
+        <img src="assets/coop-icons/hill-15.png" alt="Hiyoshi-zaka achievement icon" class="hill-icon" width="72" height="72">
+        <div>
+          <strong><span data-lang="en">Hiyoshi-zaka (日吉坂)</span><span data-lang="ja">日吉坂</span></strong><br>
+          <span data-lang="en">Danger once lurked in the shadows of Hiyoshi-zaka after dark. Descend together and stay alert — this slope doesn't forgive a moment's carelessness.</span>
+          <span data-lang="ja">日吉坂には、日が暮れると危険が潜んでいたという。二人で油断なく坂を下ろう——一瞬の隙も許されない。</span>
+        </div>
+      </li>
+      <li class="hill-card">
+        <img src="assets/coop-icons/hill-25.png" alt="Katsura-zaka achievement icon" class="hill-icon" width="72" height="72">
+        <div>
+          <strong><span data-lang="en">Katsura-zaka (桂坂)</span><span data-lang="ja">桂坂</span></strong><br>
+          <span data-lang="en">A vain traveler's secret was once exposed by a sudden gust on Katsura-zaka. History threatens to repeat itself — can the two of you keep your composure when the wind rises?</span>
+          <span data-lang="ja">かつて桂坂では、突然の風が旅人の秘密を暴いたという。二人は同じ運命を繰り返さずに済むか——風が吹き始めたとき、平静を保てるかが鍵となる。</span>
+        </div>
+      </li>
+      <li class="hill-card">
+        <img src="assets/coop-icons/hill-33.png" alt="Kuwabara-zaka achievement icon" class="hill-icon" width="72" height="72">
+        <div>
+          <strong><span data-lang="en">Kuwabara-zaka (桑原坂)</span><span data-lang="ja">桑原坂</span></strong><br>
+          <span data-lang="en">Storm clouds gather over Kuwabara-zaka. An old superstition once kept travelers safe from the thunder here — see if the two of you remember it in time.</span>
+          <span data-lang="ja">桑原坂に嵐の気配が近づく。かつてこの地には、雷から旅人を守る言い伝えがあったという——二人でその言葉を思い出せるか。</span>
+        </div>
+      </li>
+      <li class="hill-card">
+        <img src="assets/coop-icons/hill-34.png" alt="Hora-zaka achievement icon" class="hill-icon" width="72" height="72">
+        <div>
+          <strong><span data-lang="en">Hora-zaka (洞坂)</span><span data-lang="ja">洞坂</span></strong><br>
+          <span data-lang="en">The steepest, most twisting slope in Edo has never been easy to measure. Two sets of eyes and two sets of feet will have to work together to map it properly.</span>
+          <span data-lang="ja">江戸で最も急で曲がりくねった坂は、これまで正確に測るのが難しかった。二人の目と二人の足を合わせなければ、この坂を測り切ることはできない。</span>
+        </div>
+      </li>
+      <li class="hill-card">
+        <img src="assets/coop-icons/hill-50.png" alt="Sankō-zaka achievement icon" class="hill-icon" width="72" height="72">
+        <div>
+          <strong><span data-lang="en">Sankō-zaka (三光坂)</span><span data-lang="ja">三光坂</span></strong><br>
+          <span data-lang="en">Three stone statues watch over Sankō-zaka, each marking a stage on the road to enlightenment. Reaching the bottom takes more than walking — the two of you will need to read what the statues are trying to tell you.</span>
+          <span data-lang="ja">三光坂に佇む三体の石像が、悟りへの道の各段階を見守っている。坂を下りきるには、ただ歩くだけでは足りない——石像が語りかける何かを、二人で読み解く必要がある。</span>
+        </div>
+      </li>
+      <li class="hill-card">
+        <img src="assets/coop-icons/hill-58.png" alt="Shiomi-zaka achievement icon" class="hill-icon" width="72" height="72">
+        <div>
+          <strong><span data-lang="en">Shiomi-zaka (潮見坂)</span><span data-lang="ja">潮見坂</span></strong><br>
+          <span data-lang="en">The tide that once defined the view from Shiomi-zaka has long since vanished from sight. Move in rhythm with your partner to bring its ebb and flow back to life.</span>
+          <span data-lang="ja">潮見坂からかつて見えた潮の満ち引きは、今はもう見えない。二人で息を合わせて動き、その流れをもう一度感じ取ろう。</span>
+        </div>
+      </li>
+      <li class="hill-card">
+        <img src="assets/coop-icons/hill-77.png" alt="Yūrei-zaka achievement icon" class="hill-icon" width="72" height="72">
+        <div>
+          <strong><span data-lang="en">Yūrei-zaka (幽霊坂)</span><span data-lang="ja">幽霊坂</span></strong><br>
+          <span data-lang="en">A vengeful spirit haunts Yūrei-zaka after dark, and only lantern light can hold it at bay. Keep the flame alive together, or be swallowed by the dark.</span>
+          <span data-lang="ja">夜の幽霊坂には怨霊が棲みつき、灯火の光だけがそれを退ける。二人で灯りを絶やさぬよう協力せよ——さもなくば、闇に飲まれる。</span>
+        </div>
+      </li>
+      <li class="hill-card">
+        <img src="assets/coop-icons/hill-78.png" alt="Zakuro-zaka achievement icon" class="hill-icon" width="72" height="72">
+        <div>
+          <strong><span data-lang="en">Zakuro-zaka (柘榴坂)</span><span data-lang="ja">柘榴坂</span></strong><br>
+          <span data-lang="en">Pomegranate trees still line the old Satsuma estate grounds on Zakuro-zaka. Working together on the way down pays off — the two of you will want good timing and good hands.</span>
+          <span data-lang="ja">柘榴坂には、かつての薩摩藩邸に植えられた柘榴の樹が今も並ぶ。坂を下りながら息を合わせれば、きっと実りがある——タイミングと呼吸が鍵となる。</span>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section id="flower-of-month" class="container">
+    <div class="flower-band" id="flower-band">
+      <div class="flower-text" data-month="1">
+        <h4><span data-lang="en">Camellia (Tsubaki)</span><span data-lang="ja">椿</span></h4>
+        <p><span data-lang="en">Camellia blooms through the coldest months, its bold red petals a rare spot of color against winter's grey.</span><span data-lang="ja">冬の寒さの中に咲く椿は、灰色の景色に映える鮮やかな赤い花を咲かせる。</span></p>
+      </div>
+      <div class="flower-text" data-month="2">
+        <h4><span data-lang="en">Plum Blossom (Ume)</span><span data-lang="ja">梅</span></h4>
+        <p><span data-lang="en">Plum blossoms are the first flowers of the year in Edo, opening while snow may still linger on the branches.</span><span data-lang="ja">梅は江戸で一年の最初に咲く花で、枝にまだ雪が残る頃に開花する。</span></p>
+      </div>
+      <div class="flower-text" data-month="3">
+        <h4><span data-lang="en">Cherry Blossom (Sakura)</span><span data-lang="ja">桜</span></h4>
+        <p><span data-lang="en">Cherry blossoms sweep across Tokyo each spring, their fleeting beauty long celebrated with hanami gatherings.</span><span data-lang="ja">桜は春の東京を彩り、その儚い美しさは古くから花見で愛でられてきた。</span></p>
+      </div>
+      <div class="flower-text" data-month="4">
+        <h4><span data-lang="en">Wisteria (Fuji)</span><span data-lang="ja">藤</span></h4>
+        <p><span data-lang="en">Wisteria drapes in cascading violet clusters each April, a favorite subject of Edo-period woodblock prints.</span><span data-lang="ja">藤は4月になると紫の房を垂らして咲き、江戸時代の浮世絵にもたびたび描かれた。</span></p>
+      </div>
+      <div class="flower-text" data-month="5">
+        <h4><span data-lang="en">Azalea (Tsutsuji)</span><span data-lang="ja">つつじ</span></h4>
+        <p><span data-lang="en">Azaleas blanket Tokyo's hillsides in May, once cultivated so widely in Edo that whole neighborhoods were named for them.</span><span data-lang="ja">つつじは5月に東京の坂道を彩り、江戸時代には栽培が盛んで町名の由来にもなった。</span></p>
+      </div>
+      <div class="flower-text" data-month="6">
+        <h4><span data-lang="en">Hydrangea (Ajisai)</span><span data-lang="ja">紫陽花</span></h4>
+        <p><span data-lang="en">Hydrangea marks the rainy season, its blue petals said to shift in hue with the soil beneath them.</span><span data-lang="ja">紫陽花は梅雨の訪れを告げる花で、土壌によって色合いが変わるといわれている。</span></p>
+      </div>
+      <div class="flower-text" data-month="7">
+        <h4><span data-lang="en">Morning Glory (Asagao)</span><span data-lang="ja">朝顔</span></h4>
+        <p><span data-lang="en">Morning glories open at dawn and close by noon — Edo's Iriya district still holds a festival in their honor every July.</span><span data-lang="ja">朝顔は夜明けに咲き昼には閉じる花で、入谷では今も7月に朝顔まつりが開かれる。</span></p>
+      </div>
+      <div class="flower-text" data-month="8">
+        <h4><span data-lang="en">Sunflower (Himawari)</span><span data-lang="ja">ひまわり</span></h4>
+        <p><span data-lang="en">Sunflowers turn to follow the summer sun, their bright faces a modern symbol of Tokyo's hottest month.</span><span data-lang="ja">ひまわりは夏の太陽を追うように咲き、東京の最も暑い月を象徴する花となっている。</span></p>
+      </div>
+      <div class="flower-text" data-month="9">
+        <h4><span data-lang="en">Fragrant Olive (Kinmokusei)</span><span data-lang="ja">金木犀</span></h4>
+        <p><span data-lang="en">Fragrant olive announces autumn's arrival with a sweet scent, often noticed before its small orange blossoms are seen.</span><span data-lang="ja">金木犀は小さな橙色の花が目に入る前に、甘い香りで秋の訪れを知らせる。</span></p>
+      </div>
+      <div class="flower-text" data-month="10">
+        <h4><span data-lang="en">Cosmos</span><span data-lang="ja">コスモス</span></h4>
+        <p><span data-lang="en">Cosmos sway through October fields, their name borrowed from the Greek word for harmony — fitting for autumn's gentle close.</span><span data-lang="ja">コスモスは10月の野を揺れながら彩り、その名は調和を意味するギリシャ語に由来する。</span></p>
+      </div>
+      <div class="flower-text" data-month="11">
+        <h4><span data-lang="en">Maple Leaves (Momiji)</span><span data-lang="ja">紅葉</span></h4>
+        <p><span data-lang="en">Maple leaves turn brilliant red and gold in November, drawing crowds to Tokyo's gardens for centuries of autumn viewing.</span><span data-lang="ja">紅葉は11月に赤や黄金色へと色づき、何世紀にもわたり東京の庭園に人々を惹きつけてきた。</span></p>
+      </div>
+      <div class="flower-text" data-month="12">
+        <h4><span data-lang="en">Narcissus (Suisen)</span><span data-lang="ja">水仙</span></h4>
+        <p><span data-lang="en">Narcissus blooms through Tokyo's mild winters, its quiet fragrance one of the last of the year.</span><span data-lang="ja">水仙は東京の穏やかな冬に咲き、その静かな香りは一年の締めくくりを彩る。</span></p>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>
+      <a href="https://apps.apple.com/jp/app/the-hills-of-edo/id6745310935">
+        <span data-lang="en">App Store</span><span data-lang="ja">App Store</span>
+      </a>
+      <a href="privacy.html">
+        <span data-lang="en">Privacy Policy</span><span data-lang="ja">プライバシーポリシー</span>
+      </a>
+      <a href="mailto:hillsofedo@icloud.com">hillsofedo@icloud.com</a>
+    </p>
+    <p>&copy; 2026 Jason G. Karlin</p>
+  </footer>
+
+  <script src="js/language.js"></script>
+  <script src="js/flowers.js"></script>
+</body>
+</html>
