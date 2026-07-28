@@ -1,3 +1,6 @@
+// Run from the repo root as bare `node --test`. Passing the directory
+// (`node --test test/`) fails on some Node versions due to a
+// directory-argument resolution quirk.
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import '../js/language.js';
