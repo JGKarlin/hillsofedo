@@ -18,6 +18,9 @@
   --font-body: 'Caudex', serif;
 
   --max-width: 960px;
+  /* Single body-text measure. Fixed px, not ch: ch scales with each
+     element's own font-size, which silently widens larger-type blocks. */
+  --measure: 621px;
 }
 
 * { box-sizing: border-box; }
@@ -33,7 +36,7 @@ html, body {
 }
 
 p {
-  max-width: 68ch;
+  max-width: var(--measure);
 }
 footer.site-footer p {
   max-width: none;
@@ -63,6 +66,7 @@ ul:not(#coop-hills ul) {
   list-style: none;
   margin: 0 0 16px;
   padding: 0;
+  max-width: var(--measure);
 }
 ul:not(#coop-hills ul) li {
   position: relative;
@@ -384,7 +388,7 @@ section:last-of-type { border-bottom: none; }
   padding-bottom: 72px;
 }
 .hero-text > * {
-  max-width: 620px;
+  max-width: var(--measure);
 }
 @media (max-width: 720px) {
   #hero {
