@@ -347,17 +347,18 @@ section:last-of-type { border-bottom: none; }
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 36%;
-  right: 6%;
+  left: 42%;
+  right: 14%;
+  overflow: hidden;
   z-index: 0;
-  mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 88%, transparent 100%);
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 88%, transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0%, black 6%, black 92%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 6%, black 92%, transparent 100%);
 }
 .hero-bg img {
-  width: 100%;
+  width: 102%;
   height: 100%;
   object-fit: cover;
-  object-position: 78% 22%;
+  object-position: 38% 32%;
 }
 .hero-bg::after {
   content: '';
@@ -366,11 +367,11 @@ section:last-of-type { border-bottom: none; }
   background: linear-gradient(
     to right,
     var(--washi) 0%,
-    var(--washi) 22%,
-    rgba(244, 236, 221, 0.85) 36%,
-    rgba(244, 236, 221, 0.4) 52%,
-    rgba(244, 236, 221, 0.05) 70%,
-    transparent 85%
+    var(--washi) 10%,
+    rgba(244, 236, 221, 0.7) 24%,
+    rgba(244, 236, 221, 0.25) 40%,
+    rgba(244, 236, 221, 0.05) 58%,
+    transparent 75%
   );
 }
 .hero-text {
