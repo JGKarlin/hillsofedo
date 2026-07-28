@@ -366,7 +366,8 @@ section:last-of-type { border-bottom: none; }
   inset: 0;
   background: linear-gradient(
     to right,
-    var(--washi) 0%,
+    transparent 0%,
+    var(--washi) 9%,
     var(--washi) 10%,
     rgba(244, 236, 221, 0.7) 24%,
     rgba(244, 236, 221, 0.25) 40%,
