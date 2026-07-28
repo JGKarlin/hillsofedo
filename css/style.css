@@ -347,8 +347,8 @@ section:last-of-type { border-bottom: none; }
   position: absolute;
   top: 0;
   bottom: 0;
-  right: 0;
-  width: 66%;
+  left: 36%;
+  right: 6%;
   z-index: 0;
   mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 88%, transparent 100%);
   -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 88%, transparent 100%);
@@ -366,16 +366,17 @@ section:last-of-type { border-bottom: none; }
   background: linear-gradient(
     to right,
     var(--washi) 0%,
-    var(--washi) 32%,
-    rgba(244, 236, 221, 0.88) 46%,
-    rgba(244, 236, 221, 0.45) 62%,
-    rgba(244, 236, 221, 0.08) 78%,
-    transparent 92%
+    var(--washi) 22%,
+    rgba(244, 236, 221, 0.85) 36%,
+    rgba(244, 236, 221, 0.4) 52%,
+    rgba(244, 236, 221, 0.05) 70%,
+    transparent 85%
   );
 }
 .hero-text {
   position: relative;
   z-index: 1;
+  width: 100%;
   padding-top: 72px;
   padding-bottom: 72px;
 }
@@ -392,6 +393,7 @@ section:last-of-type { border-bottom: none; }
     position: relative;
     top: auto;
     bottom: auto;
+    left: auto;
     right: auto;
     width: 100%;
     height: auto;
