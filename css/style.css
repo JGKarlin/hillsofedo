@@ -119,7 +119,8 @@ h3 {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  margin: 16px 0;
+  margin: 16px auto;
+  max-width: 500px;
 }
 .icon-row figure {
   margin: 0;
