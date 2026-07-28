@@ -157,8 +157,8 @@ h3 {
   -webkit-mask-position: center;
   mask-position: center;
 }
-.action-icon-rally { -webkit-mask-image: url('assets/howto/rallying.png'); mask-image: url('assets/howto/rallying.png'); }
-.action-icon-surrender { -webkit-mask-image: url('assets/howto/surrendering.png'); mask-image: url('assets/howto/surrendering.png'); }
+.action-icon-rally { -webkit-mask-image: url('../assets/howto/rallying.png'); mask-image: url('../assets/howto/rallying.png'); }
+.action-icon-surrender { -webkit-mask-image: url('../assets/howto/surrendering.png'); mask-image: url('../assets/howto/surrendering.png'); }
 
 .role-icon {
   width: 48px;
@@ -172,13 +172,13 @@ h3 {
 }
 .role-icon-lord {
   background-color: #A11323;
-  -webkit-mask-image: url('assets/howto/lord.svg');
-  mask-image: url('assets/howto/lord.svg');
+  -webkit-mask-image: url('../assets/howto/lord.svg');
+  mask-image: url('../assets/howto/lord.svg');
 }
 .role-icon-retainer {
   background-color: #00B2A9;
-  -webkit-mask-image: url('assets/howto/retainer.svg');
-  mask-image: url('assets/howto/retainer.svg');
+  -webkit-mask-image: url('../assets/howto/retainer.svg');
+  mask-image: url('../assets/howto/retainer.svg');
 }
 
 .icon-row img {
