@@ -111,30 +111,13 @@ h3 {
   margin-top: 36px;
 }
 
-.shot-row-wrap {
-  position: relative;
-}
-.shot-row-wrap::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 12px;
-  width: 56px;
-  background: linear-gradient(to right, transparent, var(--washi) 80%);
-  pointer-events: none;
-  z-index: 1;
-}
-.scroll-hint {
-  position: absolute;
-  top: calc(50% - 6px);
-  right: 10px;
-  transform: translateY(-50%);
-  font-size: 1.4rem;
+/* Scroll affordance lives in text below the heading, not as an overlay:
+   a gradient painted over the last screenshot reads as a damaged image. */
+.scroll-note {
+  margin: -12px 0 16px;
+  font-size: 0.85rem;
   color: var(--ink);
-  opacity: 0.5;
-  pointer-events: none;
-  z-index: 2;
+  opacity: 0.6;
 }
 .shot-row {
   display: flex;
