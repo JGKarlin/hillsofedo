@@ -118,7 +118,7 @@ h3 {
 /* Scroll affordance lives in text below the heading, not as an overlay:
    a gradient painted over the last screenshot reads as a damaged image. */
 .scroll-note {
-  margin: -12px 0 16px;
+  margin: -6px 0 0;
   font-size: 0.85rem;
   color: var(--ink);
   opacity: 0.6;
@@ -347,8 +347,8 @@ section:last-of-type { border-bottom: none; }
   z-index: 0;
   /* The only effect on this element: one soft fade-in on the left.
      Do not stack a second mask or an overlay gradient on top of it. */
-  mask-image: linear-gradient(to right, transparent 0%, black 22%);
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 22%);
+  mask-image: linear-gradient(to right, transparent 0%, black 45%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 45%);
 }
 .hero-bg img {
   width: 102%;
@@ -367,6 +367,11 @@ section:last-of-type { border-bottom: none; }
    section — no separate narrower measure. */
 .hero-text > * {
   max-width: var(--measure);
+}
+/* The description wraps well before the artwork, so it only grazes the
+   left edge of the print rather than running across it. */
+.hero-text > p:not(.cta-row) {
+  max-width: 400px;
 }
 @media (max-width: 720px) {
   #hero {
