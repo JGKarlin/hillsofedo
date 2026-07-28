@@ -421,19 +421,10 @@ section:last-of-type { border-bottom: none; }
   opacity: 0.8;
 }
 
-#coop-highlight {
-  background: var(--washi-dark);
-}
-.coop-highlight-inner {
-  text-align: center;
-}
-.coop-highlight-inner h2 {
-  display: inline-block;
-  border-left: none;
-  padding-left: 0;
-}
-.coop-highlight-inner p {
-  margin: 0 auto 12px;
+/* One-line description introducing each How to Play section. */
+.section-lede {
+  margin: -8px 0 20px;
+  font-size: 1.05rem;
 }
 
 .jump-nav {
