@@ -345,32 +345,12 @@ section:last-of-type { border-bottom: none; }
   right: max(20px, calc(50% - 460px));
   overflow: hidden;
   z-index: 0;
-  mask-image: linear-gradient(to bottom, transparent 0%, black 6%, black 92%, transparent 100%);
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 6%, black 92%, transparent 100%);
 }
 .hero-bg img {
   width: 102%;
   height: 100%;
   object-fit: cover;
   object-position: 38% 32%;
-  mask-image: linear-gradient(to right, transparent 0%, black 14%);
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 14%);
-}
-.hero-bg::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  /* Text now spans the whole column, so the veil never drops below ~0.55:
-     every line stays legible and the art reads as a muted backdrop. */
-  background: linear-gradient(
-    to right,
-    transparent 0%,
-    var(--washi) 12%,
-    rgba(244, 236, 221, 0.86) 30%,
-    rgba(244, 236, 221, 0.72) 55%,
-    rgba(244, 236, 221, 0.62) 80%,
-    rgba(244, 236, 221, 0.56) 100%
-  );
 }
 .hero-text {
   position: relative;
