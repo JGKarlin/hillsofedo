@@ -376,8 +376,11 @@ section:last-of-type { border-bottom: none; }
 .hero-text {
   position: relative;
   z-index: 1;
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+.hero-text > * {
   max-width: 540px;
-  padding: 72px 20px;
 }
 @media (max-width: 720px) {
   #hero {
