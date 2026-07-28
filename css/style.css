@@ -18,9 +18,9 @@
   --font-body: 'Caudex', serif;
 
   --max-width: 960px;
-  /* Single body-text measure. Fixed px, not ch: ch scales with each
-     element's own font-size, which silently widens larger-type blocks. */
-  --measure: 621px;
+  /* Body text fills the same content column as the screenshot row,
+     feature grid, and headings — one column, one width, page-wide. */
+  --measure: none;
 }
 
 * { box-sizing: border-box; }
@@ -70,14 +70,16 @@ ul:not(#coop-hills ul) {
 }
 ul:not(#coop-hills ul) li {
   position: relative;
-  padding-left: 22px;
+  padding-left: 0;
   margin-bottom: 10px;
 }
+/* Marker hangs in the gutter so list TEXT starts on the same left edge
+   as paragraph text — one column, one left edge. */
 ul:not(#coop-hills ul) li::before {
   content: '—';
   color: var(--vermillion);
   position: absolute;
-  left: 0;
+  left: -22px;
 }
 
 .feature-grid {
@@ -105,10 +107,12 @@ ul:not(#coop-hills ul) li::before {
   max-width: none;
 }
 
+/* Accent bar hangs in the gutter; heading text lands on the shared edge. */
 h3 {
   border-left: 3px solid var(--washi-dark);
   padding-left: 10px;
   margin-top: 36px;
+  margin-left: -13px;
 }
 
 /* Scroll affordance lives in text below the heading, not as an overlay:
@@ -370,8 +374,10 @@ section:last-of-type { border-bottom: none; }
   padding-top: 72px;
   padding-bottom: 72px;
 }
+/* Hero is the one exception: its text shares the band with the artwork,
+   so it stays narrow rather than running across the print. */
 .hero-text > * {
-  max-width: var(--measure);
+  max-width: 620px;
 }
 @media (max-width: 720px) {
   #hero {
@@ -470,6 +476,7 @@ h2 {
   border-left: 5px solid var(--vermillion);
   padding-left: 12px;
   margin-bottom: 24px;
+  margin-left: -17px;
 }
 
 a { color: var(--vermillion); }
