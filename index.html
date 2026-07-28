@@ -57,33 +57,30 @@
   </header>
 
   <main>
-    <section id="hero" class="container">
-      <div class="hero-layout">
-        <div class="hero-text">
-          <img src="assets/icon/app-icon.png" alt="The Hills of Edo app icon" width="140" height="140" style="border-radius: 24px; box-shadow: 0 6px 20px rgba(43,36,28,0.3);">
-          <h1>
-            <span data-lang="en">The Hills of Edo</span>
-            <span data-lang="ja">江戸の坂</span>
-          </h1>
-          <p style="font-size: 1.2rem;">
-            <span data-lang="en">Explore Tokyo on Foot</span>
-            <span data-lang="ja">港区で楽しむ現地体験</span>
-          </p>
-          <p>
-            <span data-lang="en">Explore Tokyo's Minato Ward to find 79 historic Edo-period hills. Use the in-game map to locate and capture markers at each hill's top and bottom, unlocking historical details about the city's transformation. Progress through ten samurai ranks or team up in cooperative mode for shared challenges and mini-games.</span>
-            <span data-lang="ja">東京・港区を歩いて、江戸の面影を残す79の坂を巡ろう。アプリ内の地図を使って各坂に辿り着き、上下の標識を確保するたびに、江戸から現代へと移り変わる東京の歴史が明らかになる。全ての坂を制覇して10の武士の位階を登りつめるもよし、協力モードでパートナーと共にユニークなチャレンジやミニゲームに挑むもよし。</span>
-          </p>
-          <p class="cta-row">
-            <a href="https://apps.apple.com/jp/app/the-hills-of-edo/id6745310935" class="app-store-cta">
-              <span data-lang="en">Download on the App Store →</span>
-              <span data-lang="ja">App Storeでダウンロード →</span>
-            </a>
-          </p>
-        </div>
-        <div class="hero-visual">
-          <img data-lang="en" src="assets/screenshots/en/en-02.jpg" alt="The Hills of Edo title screen, woodblock-print style art of Mt. Fuji and cherry blossoms" width="260" height="565" loading="lazy">
-          <img data-lang="ja" src="assets/screenshots/ja/ja-02.jpg" alt="富士山と桜を描いた浮世絵風のタイトル画面" width="260" height="565" loading="lazy">
-        </div>
+    <section id="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="assets/hero/cover.jpg" alt="" width="1191" height="1800" loading="eager">
+      </div>
+      <div class="container hero-text">
+        <img src="assets/icon/app-icon.png" alt="The Hills of Edo app icon" width="140" height="140" style="border-radius: 24px; box-shadow: 0 6px 20px rgba(43,36,28,0.3);">
+        <h1>
+          <span data-lang="en">The Hills of Edo</span>
+          <span data-lang="ja">江戸の坂</span>
+        </h1>
+        <p style="font-size: 1.2rem;">
+          <span data-lang="en">Explore Tokyo on Foot</span>
+          <span data-lang="ja">港区で楽しむ現地体験</span>
+        </p>
+        <p>
+          <span data-lang="en">Explore Tokyo's Minato Ward to find 79 historic Edo-period hills. Use the in-game map to locate and capture markers at each hill's top and bottom, unlocking historical details about the city's transformation. Progress through ten samurai ranks or team up in cooperative mode for shared challenges and mini-games.</span>
+          <span data-lang="ja">東京・港区を歩いて、江戸の面影を残す79の坂を巡ろう。アプリ内の地図を使って各坂に辿り着き、上下の標識を確保するたびに、江戸から現代へと移り変わる東京の歴史が明らかになる。全ての坂を制覇して10の武士の位階を登りつめるもよし、協力モードでパートナーと共にユニークなチャレンジやミニゲームに挑むもよし。</span>
+        </p>
+        <p class="cta-row">
+          <a href="https://apps.apple.com/jp/app/the-hills-of-edo/id6745310935" class="app-store-cta">
+            <img data-lang="en" src="assets/badges/app-store-badge-en.svg" alt="Download on the App Store" width="144" height="48">
+            <img data-lang="ja" src="assets/badges/app-store-badge-ja.svg" alt="App Storeでダウンロード" width="131" height="48">
+          </a>
+        </p>
       </div>
     </section>
     <section id="screenshots" class="container">
@@ -91,7 +88,8 @@
         <span data-lang="en">Screenshots</span>
         <span data-lang="ja">スクリーンショット</span>
       </h2>
-      <div data-lang="en" class="shot-row">
+      <div data-lang="en" class="shot-row-wrap">
+      <div class="shot-row">
         <img src="assets/screenshots/en/en-01.jpg" alt="Bottom marker of Aoki-zaka captured, prompting the player to capture the Top next" width="442" height="960" loading="lazy" decoding="async" style="height: 480px; border-radius: 12px; box-shadow: 0 4px 12px rgba(43,36,28,0.25);">
         <img src="assets/screenshots/en/en-02.jpg" alt="Title screen with Mt. Fuji and cherry blossoms in a woodblock-print style — tap to start" width="442" height="960" loading="lazy" decoding="async" style="height: 480px; border-radius: 12px; box-shadow: 0 4px 12px rgba(43,36,28,0.25);">
         <img src="assets/screenshots/en/en-03.jpg" alt="Map view showing live distance to the nearest uncaptured hill, Aoki-zaka" width="442" height="960" loading="lazy" decoding="async" style="height: 480px; border-radius: 12px; box-shadow: 0 4px 12px rgba(43,36,28,0.25);">
@@ -103,7 +101,10 @@
         <img src="assets/screenshots/en/en-09.jpg" alt="Historical Edo-period map overlay for Aoki-zaka" width="442" height="960" loading="lazy" decoding="async" style="height: 480px; border-radius: 12px; box-shadow: 0 4px 12px rgba(43,36,28,0.25);">
         <img src="assets/screenshots/en/en-10.jpg" alt="Main menu showing the Rōnin rank banner with 0 hills captured" width="442" height="960" loading="lazy" decoding="async" style="height: 480px; border-radius: 12px; box-shadow: 0 4px 12px rgba(43,36,28,0.25);">
       </div>
-      <div data-lang="ja" class="shot-row">
+      <span class="scroll-hint" aria-hidden="true">&#8594;</span>
+      </div>
+      <div data-lang="ja" class="shot-row-wrap">
+      <div class="shot-row">
         <img src="assets/screenshots/ja/ja-01.jpg" alt="青木坂の麓の標識を確保した画面。次は頂上の確保を促すメッセージ" width="442" height="960" loading="lazy" decoding="async" style="height: 480px; border-radius: 12px; box-shadow: 0 4px 12px rgba(43,36,28,0.25);">
         <img src="assets/screenshots/ja/ja-02.jpg" alt="富士山と桜を描いた浮世絵風のタイトル画面「タップして開始」" width="442" height="960" loading="lazy" decoding="async" style="height: 480px; border-radius: 12px; box-shadow: 0 4px 12px rgba(43,36,28,0.25);">
         <img src="assets/screenshots/ja/ja-03.jpg" alt="最寄りの未確保の坂、青木坂までの距離をリアルタイムで表示する地図画面" width="442" height="960" loading="lazy" decoding="async" style="height: 480px; border-radius: 12px; box-shadow: 0 4px 12px rgba(43,36,28,0.25);">
@@ -116,6 +117,8 @@
         <img src="assets/screenshots/ja/ja-10.jpg" alt="浪人の位階と確保数0坂を表示するメインメニューの位階の旗" width="442" height="960" loading="lazy" decoding="async" style="height: 480px; border-radius: 12px; box-shadow: 0 4px 12px rgba(43,36,28,0.25);">
         <img src="assets/screenshots/ja/ja-11.jpg" alt="青木坂の麓の標識を確保した画面（日本語表示）" width="442" height="960" loading="lazy" decoding="async" style="height: 480px; border-radius: 12px; box-shadow: 0 4px 12px rgba(43,36,28,0.25);">
         <img src="assets/screenshots/ja/ja-12.jpg" alt="浪人の位階を示すメインメニューの位階の旗（日本語表示）" width="442" height="960" loading="lazy" decoding="async" style="height: 480px; border-radius: 12px; box-shadow: 0 4px 12px rgba(43,36,28,0.25);">
+      </div>
+      <span class="scroll-hint" aria-hidden="true">&#8594;</span>
       </div>
     </section>
     <section id="features" class="container">
@@ -143,6 +146,10 @@
         <div class="feature-card">
           <h3><span data-lang="en">Bilingual</span><span data-lang="ja">日本語・英語対応</span></h3>
           <p><span data-lang="en">Fully playable in English and Japanese.</span><span data-lang="ja">日本語と英語、両方で完全にプレイ可能です。</span></p>
+        </div>
+        <div class="feature-card">
+          <h3><span data-lang="en">AR &amp; Sensor Mini-Games</span><span data-lang="ja">AR・センサーミニゲーム</span></h3>
+          <p><span data-lang="en">Camera-based AR scanning, voice recognition, and motion sensors power unique two-player challenges you won't find in singleplayer.</span><span data-lang="ja">カメラを使ったARスキャンや音声認識、モーションセンサーを活用した、協力モード限定のユニークな二人用チャレンジに挑戦できます。</span></p>
         </div>
       </div>
     </section>
