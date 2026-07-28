@@ -383,7 +383,7 @@ section:last-of-type { border-bottom: none; }
   padding-bottom: 72px;
 }
 .hero-text > * {
-  max-width: 540px;
+  max-width: 620px;
 }
 @media (max-width: 720px) {
   #hero {
